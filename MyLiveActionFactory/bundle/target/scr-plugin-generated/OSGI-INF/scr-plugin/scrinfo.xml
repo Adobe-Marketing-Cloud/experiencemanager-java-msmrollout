@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" name="com.adobe.example.msm.ExampleLiveActionFactory">
+        <implementation class="com.adobe.example.msm.ExampleLiveActionFactory"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.wcm.msm.api.LiveActionFactory"/>
+        </service>
+        <property name="liveActionName" type="String" value="exampleLiveAction" private="false"/>
+        <property name="service.pid" value="com.adobe.example.msm.ExampleLiveActionFactory" private="false"/>
+    </scr:component>
+</components>
